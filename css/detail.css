@@ -1,8 +1,7 @@
-.back-btn a {
+a {
   text-decoration: none;
-  color: lemonchiffon;
+  color:#fff;
 }
-
 .back-btn {
   height: 40px;
   color: #fff;

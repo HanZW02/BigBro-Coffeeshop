@@ -6,7 +6,7 @@
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/Background/background.jpg);
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -14,19 +14,22 @@ body {
 .container {
   font-family: Arial, Helvetica, sans-serif;
   color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* Navigation Bar */
 .nav-bar {
-  padding: 35px;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  flex-wrap: wrap;
 }
 
 .nav-bar .title {
-  font-size: 38px;
+  font-size: 32px;
   font-weight: 600;
 }
 
@@ -37,16 +40,17 @@ span {
 .menu {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .menu li {
-  padding: 0 20px; 
+  padding: 0 15px; 
 }
 
 .menu li a {
   text-decoration: none;
   color: #fff;
-  font-size: 30px;
+  font-size: 24px;
   font-weight: 600;
   transition: 0.4s ease;
 }
@@ -59,28 +63,23 @@ span {
 
 /* Home Section */
 #home {
-  height: 400px;
-  padding: 70px;
+  height: auto;
+  padding: 70px 20px;
   text-align: center; 
   margin-bottom: 50px; 
 }
 
 .title-1 {
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
 }
 #home p {
   color: lemonchiffon;
-  font-size: 20px;
+  font-size: 18px;
   padding-top: 10px;
 }
 
-#home button a {
-  text-decoration: none;
-  color: lemonchiffon;
-}
-
-#home button {
+.order-btn {
   height: 40px;
   color: #fff;
   background: crimson;
@@ -90,16 +89,17 @@ span {
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
+  font-size: 18px;
 }
 
-#home button:hover {
+.order-btn:hover {
   background: none;
   border: 2px solid crimson;
 }
 
 /* Product Section */
 #product {
-  padding: 70px;
+  padding: 70px 20px;
   margin-bottom: 50px; 
 }
 
@@ -121,7 +121,7 @@ span {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 16px;
-  padding: 20px;
+  padding: 20px 0;
 }
 
 .product-item {
@@ -161,6 +161,7 @@ span {
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
+  font-size: 16px;
 }
 
 .buy-btn a {
@@ -176,21 +177,22 @@ span {
 /*untuk mobile*/
 @media ( max-width: 768px) {
   #home {
-    padding: 40px; 
+    padding: 40px 20px; 
     height: auto; 
   }
 
   .nav-bar {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start; 
   }
 
   .menu {
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
   .menu li {
-    padding: 10px; 
+    padding: 10px 0; 
   }
 
   .product-grid {
@@ -198,7 +200,7 @@ span {
   }
 
   #product {
-    padding: 40px; 
+    padding: 40px 20px; 
   }
 
   .product-item {
@@ -207,7 +209,7 @@ span {
 }
 
 #contact {
-  padding: 70px;
+  padding: 70px 20px;
   background-color: rgba(0, 0, 0, 0.7);
   color: #fff;
   text-align: left;
