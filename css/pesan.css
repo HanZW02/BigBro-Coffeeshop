@@ -1,88 +1,164 @@
-.nav-bar {
-  align-items: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../assets/img/Background/background.jpg);
+  background-size: cover;
+  color: #fff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.nav-bar .title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+}
+
+span {
+  color: crimson;
+}
+
+/* Title of Pesan */
 .title-pesan {
   text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: lemonchiffon;
+  margin-bottom: 30px;
 }
 
+/* Form Styling */
 #form-group {
-  width: auto;
-  margin: 50px;
-  height: 100%;
-  text-align: left;
   background: rgba(0, 0, 0, 0.7);
-  border: 1px solid;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 4px 6px black;
   padding: 25px;
-  align-items: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
+/* Input Fields */
 input {
-  width: auto;
-  padding:8px auto;
+  width: 100%;
+  padding: 12px;
   margin: 10px 0;
-}
-
-input[type="text"] {
-  border:none;
-  background:none;
-  border-bottom:2px solid crimson;
+  background: none;
+  border: none;
+  border-bottom: 2px solid crimson;
   color: lemonchiffon;
+  font-size: 16px;
 }
 
-
-/* input[type="checkbox"] { 
-}*/
-
+input:focus {
+  outline: none;
+  border-bottom: 2px solid #fff;
+}
 
 label {
   color: lemonchiffon;
-  display: inline-block;
-  margin: 10px;
+  font-size: 16px;
   font-weight: bold;
 }
-.submit a {
-  text-decoration: none;
-  color: lemonchiffon;
+
+/* Checkbox Styling */
+.checkbox {
+  margin: 20px 0;
 }
 
-.submit {
-  height: 40px;
-  color: #fff;
-  background: crimson;
-  padding: 5px 30px;
-  margin-top: 10px;
-  border: none;
-  border-radius: 5px;
-  transition: background 0.4s ease, border 0.4s ease;
-  cursor: pointer;
+.checkbox input[type="checkbox"] {
+  margin-right: 10px;
 }
 
-.submit:hover {
+.checkbox label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Select Dropdown Styling */
+.select {
+  margin: 10px 0;
+}
+
+select {
+  width: 100%;
+  padding: 12px;
   background: none;
   border: 2px solid crimson;
-}
-
-.back-btn a {
-  text-decoration: none;
   color: lemonchiffon;
+  font-size: 16px;
 }
 
+select:focus {
+  outline: none;
+  border-color: #fff;
+}
+
+/* Button Styling */
+.submit,
 .back-btn {
-  height: 40px;
-  color: #fff;
+  width: 100%;
+  padding: 12px;
   background: crimson;
-  padding: 5px 30px;
-  margin: 50px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
-  transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
+  transition: 0.4s ease;
+  margin-top: 20px;
 }
 
+.submit:hover,
 .back-btn:hover {
   background: none;
   border: 2px solid crimson;
+  color: crimson;
+}
+
+.submit a,
+.back-btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .title-pesan {
+    font-size: 28px;
+  }
+
+  #form-group {
+    padding: 15px;
+    width: 90%;
+  }
+  
+  .submit,
+  .back-btn {
+    width: 100%;
+  }
 }
