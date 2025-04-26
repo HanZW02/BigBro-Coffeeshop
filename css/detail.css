@@ -15,7 +15,7 @@ a {
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
-  display: block; /* Agar tombol berada di tengah */
+  display: block; 
   width: fit-content;
 }
 
@@ -25,8 +25,8 @@ a {
 }
 
 .back-btn a {
-  color: #fff; /* Menjaga teks tetap putih */
-  font-size: 16px; /* Ukuran font untuk link */
+  color: #fff; 
+  font-size: 16px; 
 }
 
 /* Styling untuk Halaman Detail Produk */
@@ -35,30 +35,32 @@ a {
   background: rgba(0, 0, 0, 0.7);
   border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Menambah efek shadow */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
   padding: 45px;
   text-align: justify;
-  width: 90%; /* Menyesuaikan dengan ukuran layar */
-  max-width: 1200px; /* Menambahkan batas maksimal lebar */
+  width: 90%; 
+  max-width: 1200px; 
 }
 
 /* Gambar di Detail Produk */
 #product-detail img {
   margin: 20px 0;
   padding: 10px;
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  width: 100%; 
+  max-width: 600px; 
+  max-height: 400px; 
+  object-fit: cover; 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambah shadow di gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
+
 
 /* Judul di Halaman Detail Produk */
 h1 {
   text-align: center;
   font-size: 36px;
   font-weight: bold;
-  color: #f5f5dc; /* Warna putih kekuningan agar kontras dengan latar */
+  color: #f5f5dc;
   margin-bottom: 20px;
 }
 
@@ -67,7 +69,7 @@ h1 {
   #product-detail {
     margin: 20px;
     padding: 30px;
-    width: 100%; /* Lebar penuh untuk layar kecil */
+    width: 100%; 
   }
 
   .back-btn {
@@ -81,6 +83,6 @@ h1 {
   }
 
   #product-detail img {
-    max-height: 300px; /* Menyesuaikan tinggi gambar untuk mobile */
+    max-height: 300px; 
   }
 }
