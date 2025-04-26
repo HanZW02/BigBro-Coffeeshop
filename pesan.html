@@ -10,22 +10,29 @@
   </head>
   <body>
     <div class="container">
+      <!-- Navigation Bar -->
       <div class="nav-bar">
         <h1 class="title">Big<span>Bro</span></h1>
       </div>
 
+      <!-- Title of Form -->
       <h2 class="title-pesan">Product Order</h2>
+
+      <!-- Order Form -->
       <div id="form-group">
         <form action="" method="post">
           <div class="text-input">
+            <!-- Name Input -->
             <label for="name">Nama:</label> <br />
             <input type="text" id="name" name="name" required />
             <br />
+            <!-- Phone Number Input -->
             <label for="phone">No. Telp:</label> <br />
             <input type="text" id="phone" name="phone" required />
           </div>
           <br />
 
+          <!-- Coffee Selection -->
           <div class="checkbox">
             <label>Pilih Kopi yang ingin dipesan</label><br />
 
@@ -42,6 +49,8 @@
             <label for="affogato">Affogato</label><br />
           </div>
           <br />
+
+          <!-- Additional Options -->
           <div class="checkbox">
             <label>Tambahan</label><br />
             <input type="checkbox" id="sugar" name="additional[]" value="Affogato" />
@@ -52,6 +61,8 @@
             <label for="shot-espresso">one shot espresso</label><br />
           </div>
           <br />
+
+          <!-- Payment Method -->
           <div class="select">
             <label for="payment">Metode Pembayaran</label>
             <select name="payment" id="payment" required>
@@ -62,10 +73,12 @@
           </div>
           <br />
 
+          <!-- Submit Button -->
           <button class="submit" type="submit">Kirim Pesanan</button>
         </form>
       </div>
 
+      <!-- Back Button -->
       <button type="button" class="back-btn" onclick="location.href='index.html'"><a href="index.html">Kembali</a></button>
     </div>
   </body>
