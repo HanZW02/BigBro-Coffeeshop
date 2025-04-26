@@ -1,84 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pesan.css" />
     <title>BigBro | Coffee Shop</title>
-  </head>
-  <body>
+</head>
+<body>
     <div class="container">
-      <!-- Navigation Bar -->
-      <div class="nav-bar">
-        <h1 class="title">Big<span>Bro</span></h1>
-      </div>
+        <!-- Navigation Bar -->
+        <div class="nav-bar">
+            <h1 class="title">Big<span>Bro</span></h1>
+        </div>
 
-      <!-- Title of Form -->
-      <h2 class="title-pesan">Product Order</h2>
+        <!-- Title of Form -->
+        <h2 class="title-pesan">Product Order</h2>
 
-      <!-- Order Form -->
-      <div id="form-group">
-        <form action="" method="post">
-          <div class="text-input">
-            <!-- Name Input -->
-            <label for="name">Nama:</label> <br />
-            <input type="text" id="name" name="name" required />
-            <br />
-            <!-- Phone Number Input -->
-            <label for="phone">No. Telp:</label> <br />
-            <input type="text" id="phone" name="phone" required />
-          </div>
-          <br />
+        <!-- Order Form -->
+        <div id="form-group">
+            <form action="" method="post">
+                <div class="text-input">
+                    <!-- Name Input -->
+                    <label for="name">Nama:</label> <br />
+                    <input type="text" id="name" name="name" required />
+                    <br />
+                    <!-- Phone Number Input -->
+                    <label for="phone">No. Telp:</label> <br />
+                    <input type="text" id="phone" name="phone" required />
+                </div>
+                <br />
 
-          <div class="checkbox">
-  <label>Pilih Kopi yang ingin dipesan</label><br />
+                <div class="checkbox">
+                    <label>Pilih Kopi yang ingin dipesan</label><br />
+                    <input type="checkbox" id="espresso" name="coffee[]" value="Espresso" />
+                    <label for="espresso">Espresso</label><br />
+                    <input type="checkbox" id="americano" name="coffee[]" value="Americano" />
+                    <label for="americano">Americano</label><br />
+                    <input type="checkbox" id="latte" name="coffee[]" value="Cafe Latte" />
+                    <label for="latte">Cafe Latte</label><br />
+                    <input type="checkbox" id="affogato" name="coffee[]" value="Affogato" />
+                    <label for="affogato">Affogato</label><br />
+                </div>
 
-  <input type="checkbox" id="espresso" name="coffee[]" value="Affogato" />
-  <label for="espresso">Espresso</label><br />
+                <div class="checkbox">
+                    <label>Tambahan</label><br />
+                    <input type="checkbox" id="sugar" name="additional[]" value="Sugar Stick" />
+                    <label for="sugar">Sugar Stick</label><br />
+                    <input type="checkbox" id="brown-sugar" name="additional[]" value="Brown Sugar" />
+                    <label for="brown-sugar">Brown Sugar</label><br />
+                    <input type="checkbox" id="shot-espresso" name="additional[]" value="One Shot Espresso" />
+                    <label for="shot-espresso">One Shot Espresso</label><br />
+                </div>
 
-  <input type="checkbox" id="americano" name="coffee[]" value="Affogato" />
-  <label for="americano">Americano</label><br />
+                <br />
 
-  <input type="checkbox" id="latte" name="coffee[]" value="Affogato" />
-  <label for="latte">Cafe Latte</label><br />
+                <!-- Payment Method -->
+                <div class="select">
+                    <label for="payment">Metode Pembayaran</label>
+                    <select name="payment" id="payment" required>
+                        <option value="cash">Tunai</option>
+                        <option value="transfer">Transfer Bank</option>
+                        <option value="e-wallet">E-Wallet</option>
+                    </select>
+                </div>
 
-  <input type="checkbox" id="affogato" name="coffee[]" value="Affogato" />
-  <label for="affogato">Affogato</label><br />
-</div>
+                <br />
 
-<div class="checkbox">
-  <label>Tambahan</label><br />
-  <input type="checkbox" id="sugar" name="additional[]" value="Affogato" />
-  <label for="sugar">Sugar Stick</label><br />
-  <input type="checkbox" id="brown-sugar" name="additional[]" value="Affogato" />
-  <label for="brown-sugar">Brown Sugar</label><br />
-  <input type="checkbox" id="shot-espresso" name="additional[]" value="Affogato" />
-  <label for="shot-espresso">One Shot Espresso</label><br />
-</div>
+                <!-- Submit Button -->
+                <button class="submit" type="submit">Kirim Pesanan</button>
 
-          <br />
-
-          <!-- Payment Method -->
-           <div class="select">
-            <label for="payment">Metode Pembayaran</label>
-            <select name="payment" id="payment" required>
-              <option value="cash">Tunai</option>
-              <option value="transfer">Transfer Bank</option>
-              <option value="e-wallet">E-Wallet</option>
-            </select>
-          </div>
-
-          <br />
-
-          <!-- Submit Button -->
-<button class="submit" type="submit">Kirim Pesanan</button>
-
-<!-- Back Button -->
-<button type="button" class="back-btn" onclick="location.href='index.html'">
-  <a href="index.html">Kembali</a>
-</button>
+                <!-- Back Button -->
+                <button type="button" class="back-btn" onclick="location.href='index.html'">Kembali</button>
+            </form>
+        </div>
     </div>
-  </body>
+</body>
 </html>
