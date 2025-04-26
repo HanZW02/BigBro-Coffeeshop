@@ -36,7 +36,6 @@ span {
   color: crimson;
 }
 
-/* Title of Pesan */
 .title-pesan {
   text-align: center;
   font-size: 32px;
@@ -80,19 +79,45 @@ label {
   font-weight: bold;
 }
 
-/* Checkbox Styling */
 .checkbox {
-  margin: 20px 0;
-}
-
-.checkbox input[type="checkbox"] {
-  margin-right: 10px;
+  margin-top: 20px;
 }
 
 .checkbox label {
-  display: inline-block;
-  margin-bottom: 10px;
+  color: lemonchiffon;
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
 }
+
+input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid crimson;
+  background-color: #333;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkmark when selected */
+input[type="checkbox"]:checked {
+  background-color: crimson;
+  border-color: crimson;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '\2713'; /* Check mark symbol */
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  color: white;
+  font-siz
+
 
 /* Metode Pembayaran */
 .select {
