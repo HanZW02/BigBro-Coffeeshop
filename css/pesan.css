@@ -44,7 +44,6 @@ span {
   margin-bottom: 30px;
 }
 
-
 #form-group {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -56,6 +55,9 @@ span {
   text-align: left;
 }
 
+.text-input {
+  margin-bottom: 20px; /* Add space between text inputs */
+}
 
 input {
   width: 100%;
@@ -79,55 +81,25 @@ label {
   font-weight: bold;
 }
 
-
-.checkbox input[type="checkbox"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid crimson;
-  background-color: #333;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+.checkbox {
+  margin-top: 20px; /* Add space above the checkbox section */
 }
-
-
-.checkbox input[type="checkbox"]:checked {
-  background-color: crimson;
-  border-color: crimson;
-}
-
-.checkbox input[type="checkbox"]:checked::after {
-  content: '\2713'; 
-  position: absolute;
-  top: -2px;
-  left: 4px;
-  color: white;
-  font-size: 14px;
-}
-
-
-.checkbox input[type="checkbox"]:hover {
-  border-color: #fff;
-  background-color: #444;
-}
-
 
 .checkbox label {
   color: lemonchiffon;
   font-weight: bold;
-  display: inline-block;
-  margin-left: 10px;
-  cursor: pointer;
-  vertical-align: middle;
+  display: block; /* Ensure each label is on a new line */
+  margin-bottom: 10px; /* Add space below the label */
 }
 
+.checkbox div {
+  margin-bottom: 10px; /* Add space between each checkbox item */
+}
 
+.checkbox input[type="checkbox"] {
+  margin-right: 10px; /* Add space between checkbox and label */
+}
 
-/* Metode Pembayaran */
 .select {
   margin-top: 20px;
 }
@@ -161,89 +133,13 @@ select:focus {
   outline: none;
 }
 
-.select::after {
-  content: '\2193'; 
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: crimson;
-  font-size: 20px;
-  pointer-events: none; 
-}
-
-select:hover {
-  border-color: #fff;
-  background-color: #333;
-}
-
-option {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: lemonchiffon;
-  padding: 10px;
-}
-
-option:hover {
-  background-color: crimson;
-}
-/* Style for the submit button */
 .submit {
   height: 40px;
   color: #fff;
   background: crimson;
   padding: 5px 30px;
-  margin-top: 10px;
+  margin-top: 20px; /* Add space above the submit button */
   border: none;
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
-  cursor: pointer;
-}
-
-.submit:hover {
-  background: none;
-  border: 2px solid crimson;
-}
-
-.back-btn {
-  height: 40px;
-  color: #fff;
-  background: crimson;
-  padding: 5px 30px;
-  margin: 50px;
-  border: none;
-  border-radius: 5px;
-  transition: background 0.4s ease, border 0.4s ease;
-  cursor: pointer;
-}
-
-.back-btn:hover {
-  background: none;
-  border: 2px solid crimson;
-}
-
-.back-btn a {
-  text-decoration: none;
-  color: lemonchiffon;
-}
-
-/* Responsive Design for Mobile */
-@media (max-width: 768px) {
-  .nav-bar {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .title-pesan {
-    font-size: 28px;
-  }
-
-  #form-group {
-    padding: 15px;
-    width: 90%;
-  }
-  
-  .submit,
-  .back-btn {
-    width: 100%;
-  }
-}
+  cursor
