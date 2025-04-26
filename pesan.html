@@ -23,50 +23,60 @@
             <form action="" method="post">
                 <div class="text-input">
                     <!-- Name Input -->
-                    <label for="name">Nama:</label> <br />
+                    <label for="name">Nama:</label>
                     <input type="text" id="name" name="name" required />
-                    <br />
+                </div>
+
+                <div class="text-input">
                     <!-- Phone Number Input -->
-                    <label for="phone">No. Telp:</label> <br />
+                    <label for="phone">No. Telp:</label>
                     <input type="text" id="phone" name="phone" required />
                 </div>
-                <br />
 
                 <div class="checkbox">
-                    <label>Pilih Kopi yang ingin dipesan</label><br />
-                    <input type="checkbox" id="espresso" name="coffee[]" value="Espresso" />
-                    <label for="espresso">Espresso</label><br />
-                    <input type="checkbox" id="americano" name="coffee[]" value="Americano" />
-                    <label for="americano">Americano</label><br />
-                    <input type="checkbox" id="latte" name="coffee[]" value="Cafe Latte" />
-                    <label for="latte">Cafe Latte</label><br />
-                    <input type="checkbox" id="affogato" name="coffee[]" value="Affogato" />
-                    <label for="affogato">Affogato</label><br />
+                    <label>Pilih Kopi yang ingin dipesan:</label>
+                    <div>
+                        <input type="checkbox" id="espresso" name="coffee[]" value="Espresso" />
+                        <label for="espresso">Espresso</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="americano" name="coffee[]" value="Americano" />
+                        <label for="americano">Americano</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="latte" name="coffee[]" value="Cafe Latte" />
+                        <label for="latte">Cafe Latte</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="affogato" name="coffee[]" value="Affogato" />
+                        <label for="affogato">Affogato</label>
+                    </div>
                 </div>
 
                 <div class="checkbox">
-                    <label>Tambahan</label><br />
-                    <input type="checkbox" id="sugar" name="additional[]" value="Sugar Stick" />
-                    <label for="sugar">Sugar Stick</label><br />
-                    <input type="checkbox" id="brown-sugar" name="additional[]" value="Brown Sugar" />
-                    <label for="brown-sugar">Brown Sugar</label><br />
-                    <input type="checkbox" id="shot-espresso" name="additional[]" value="One Shot Espresso" />
-                    <label for="shot-espresso">One Shot Espresso</label><br />
+                    <label>Tambahan:</label>
+                    <div>
+                        <input type="checkbox" id="sugar" name="additional[]" value="Sugar Stick" />
+                        <label for="sugar">Sugar Stick</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="brown-sugar" name="additional[]" value="Brown Sugar" />
+                        <label for="brown-sugar">Brown Sugar</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="shot-espresso" name="additional[]" value="One Shot Espresso" />
+                        <label for="shot-espresso">One Shot Espresso</label>
+                    </div>
                 </div>
 
-                <br />
-
-                <!-- Payment Method -->
                 <div class="select">
-                    <label for="payment">Metode Pembayaran</label>
+                    <label for="payment">Metode Pembayaran:</label>
                     <select name="payment" id="payment" required>
                         <option value="cash">Tunai</option>
                         <option value="transfer">Transfer Bank</option>
                         <option value="e-wallet">E-Wallet</option>
                     </select>
                 </div>
-
-                <br />
 
                 <!-- Submit Button -->
                 <button class="submit" type="submit">Kirim Pesanan</button>
