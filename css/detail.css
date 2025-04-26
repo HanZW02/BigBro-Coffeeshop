@@ -47,12 +47,16 @@ a {
   margin: 20px 0;
   padding: 10px;
   width: 100%; 
-  max-width: 600px; 
-  max-height: 400px; 
-  object-fit: cover; 
+  max-width: 500px; 
+  max-height: 300px; 
+  object-fit: contain; 
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
 }
+
 
 
 /* Judul di Halaman Detail Produk */
