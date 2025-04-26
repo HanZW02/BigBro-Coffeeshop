@@ -44,7 +44,7 @@ span {
   margin-bottom: 30px;
 }
 
-/* Form Styling */
+
 #form-group {
   background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -56,7 +56,7 @@ span {
   text-align: left;
 }
 
-/* Input Fields */
+
 input {
   width: 100%;
   padding: 12px;
@@ -79,18 +79,8 @@ label {
   font-weight: bold;
 }
 
-.checkbox {
-  margin-top: 20px;
-}
 
-.checkbox label {
-  color: lemonchiffon;
-  font-weight: bold;
-  display: block;
-  margin: 10px 0;
-}
-
-input[type="checkbox"] {
+.checkbox input[type="checkbox"] {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -104,19 +94,37 @@ input[type="checkbox"] {
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
-/* Checkmark when selected */
-input[type="checkbox"]:checked {
+
+.checkbox input[type="checkbox"]:checked {
   background-color: crimson;
   border-color: crimson;
 }
 
-input[type="checkbox"]:checked::after {
-  content: '\2713'; /* Check mark symbol */
+.checkbox input[type="checkbox"]:checked::after {
+  content: '\2713'; 
   position: absolute;
   top: -2px;
   left: 4px;
   color: white;
-  font-siz
+  font-size: 14px;
+}
+
+
+.checkbox input[type="checkbox"]:hover {
+  border-color: #fff;
+  background-color: #444;
+}
+
+
+.checkbox label {
+  color: lemonchiffon;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
 
 
 /* Metode Pembayaran */
@@ -178,33 +186,44 @@ option {
 option:hover {
   background-color: crimson;
 }
-/* Button Styling */
-.submit,
-.back-btn {
-  width: 100%;
-  padding: 12px;
-  background: crimson;
+/* Style for the submit button */
+.submit {
+  height: 40px;
   color: #fff;
-  font-size: 18px;
-  font-weight: bold;
+  background: crimson;
+  padding: 5px 30px;
+  margin-top: 10px;
   border: none;
   border-radius: 5px;
+  transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
-  transition: 0.4s ease;
-  margin-top: 20px;
 }
 
-.submit:hover,
+.submit:hover {
+  background: none;
+  border: 2px solid crimson;
+}
+
+.back-btn {
+  height: 40px;
+  color: #fff;
+  background: crimson;
+  padding: 5px 30px;
+  margin: 50px;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.4s ease, border 0.4s ease;
+  cursor: pointer;
+}
+
 .back-btn:hover {
   background: none;
   border: 2px solid crimson;
-  color: crimson;
 }
 
-.submit a,
 .back-btn a {
   text-decoration: none;
-  color: #fff;
+  color: lemonchiffon;
 }
 
 /* Responsive Design for Mobile */
