@@ -1,17 +1,22 @@
+/* Mengatur hyperlink */
 a {
   text-decoration: none;
-  color:#fff;
+  color: #fff;
 }
+
+/* Button Kembali */
 .back-btn {
   height: 40px;
   color: #fff;
   background: crimson;
   padding: 5px 30px;
-  margin: 50px;
+  margin: 20px auto;
   border: none;
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
   cursor: pointer;
+  display: block; /* Agar tombol berada di tengah */
+  width: fit-content;
 }
 
 .back-btn:hover {
@@ -19,22 +24,63 @@ a {
   border: 2px solid crimson;
 }
 
-#product-detail img {
-  margin: 5px;
-  padding: 10px;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
+.back-btn a {
+  color: #fff; /* Menjaga teks tetap putih */
+  font-size: 16px; /* Ukuran font untuk link */
 }
+
+/* Styling untuk Halaman Detail Produk */
 #product-detail {
-  margin: 50px 100px 100px 50px;
+  margin: 50px auto;
   background: rgba(0, 0, 0, 0.7);
-  border: 1px solid;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 4px 6px black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Menambah efek shadow */
   padding: 45px;
   text-align: justify;
+  width: 90%; /* Menyesuaikan dengan ukuran layar */
+  max-width: 1200px; /* Menambahkan batas maksimal lebar */
 }
- h1 {
+
+/* Gambar di Detail Produk */
+#product-detail img {
+  margin: 20px 0;
+  padding: 10px;
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover; /* Memastikan gambar tidak terdistorsi */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Menambah shadow di gambar */
+}
+
+/* Judul di Halaman Detail Produk */
+h1 {
   text-align: center;
- }
+  font-size: 36px;
+  font-weight: bold;
+  color: #f5f5dc; /* Warna putih kekuningan agar kontras dengan latar */
+  margin-bottom: 20px;
+}
+
+/* Untuk Mobile Responsiveness */
+@media (max-width: 768px) {
+  #product-detail {
+    margin: 20px;
+    padding: 30px;
+    width: 100%; /* Lebar penuh untuk layar kecil */
+  }
+
+  .back-btn {
+    margin: 20px auto;
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  #product-detail img {
+    max-height: 300px; /* Menyesuaikan tinggi gambar untuk mobile */
+  }
+}
