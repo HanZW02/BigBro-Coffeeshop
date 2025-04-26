@@ -94,42 +94,54 @@ label {
   margin-bottom: 10px;
 }
 
+/* Metode Pembayaran */
 .select {
   margin-top: 20px;
-  position: relative;
 }
 
 .select label {
   font-size: 18px;
   font-weight: bold;
   color: lemonchiffon;
-  margin-bottom: 10px;
   display: block;
+  margin-bottom: 10px;
 }
 
 select {
   width: 100%;
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.7);
   border: 2px solid crimson;
   color: lemonchiffon;
   font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-select:hover, select:focus {
-  background-color: #333;
-  border-color: #f5f5dc;
-}
-
-select::-ms-expand {
-  display: none;  /* Removes default dropdown arrow in IE */
+  transition: all 0.3s ease;
+  appearance: none; 
+  -webkit-appearance: none;
+  -moz-appearance: none;
 }
 
 select:focus {
+  border-color: #fff;
+  background-color: #333;
   outline: none;
+}
+
+.select::after {
+  content: '\2193'; 
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: crimson;
+  font-size: 20px;
+  pointer-events: none; 
+}
+
+select:hover {
+  border-color: #fff;
+  background-color: #333;
 }
 
 option {
@@ -141,8 +153,6 @@ option {
 option:hover {
   background-color: crimson;
 }
-
-
 /* Button Styling */
 .submit,
 .back-btn {
