@@ -17,7 +17,6 @@ body {
   padding: 20px;
 }
 
-/* Navigation Bar */
 .nav-bar {
   display: flex;
   justify-content: center;
@@ -133,13 +132,38 @@ select:focus {
   outline: none;
 }
 
-.submit {
+.submit-btn {
   height: 40px;
   color: #fff;
   background: crimson;
   padding: 5px 30px;
-  margin-top: 20px; 
+  margin-top: 20px;
   border: none;
   border-radius: 5px;
   transition: background 0.4s ease, border 0.4s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn {
+  height: 40px;
+  color: #fff;
+  background: crimson;
+  padding: 5px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.4s ease, border 0.4s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  background: none;
+  border: 2px solid crimson;
+}
+
+.back-btn a {
+  color: #fff; 
+  font-size: 16px; 
 }

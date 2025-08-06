@@ -1,10 +1,8 @@
-/* Mengatur hyperlink */
 a {
   text-decoration: none;
   color: #fff;
 }
 
-/* Button Kembali */
 .back-btn {
   height: 40px;
   color: #fff;
@@ -29,7 +27,6 @@ a {
   font-size: 16px; 
 }
 
-/* Styling untuk Halaman Detail Produk */
 #product-detail {
   margin: 50px auto;
   background: rgba(0, 0, 0, 0.7);
@@ -42,7 +39,6 @@ a {
   max-width: 1200px; 
 }
 
-/* Gambar di Detail Produk */
 #product-detail img {
   margin: 20px 0;
   padding: 10px;
@@ -57,9 +53,6 @@ a {
   margin-right: auto; 
 }
 
-
-
-/* Judul di Halaman Detail Produk */
 h1 {
   text-align: center;
   font-size: 36px;
